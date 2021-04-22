@@ -14,5 +14,6 @@ routes
   .post("/settings", settingsController.create)
   .post("/user", usersController.create)
   .post("/message", messagesController.create)
+  .get("/messages/:id", messagesController.showByUser)
 
 export { routes };
